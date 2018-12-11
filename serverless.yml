@@ -1,0 +1,28 @@
+service: dc-lambda-layers
+frameworkVersion: ">=1.34.0"
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: development
+  region: us-east-1
+  deploymentBucket: serverless.${self:provider.region}.shifter.deploys
+
+custom:
+  prune:
+    automatic: true
+    number: 3
+
+plugins:
+  - serverless-prune-plugin
+
+layers:
+  stripe:
+    description: stripe sdk
+    path: stripe
+    compatibleRuntimes:
+      - nodejs8.10
+  intercom:
+    description: intercom sdk
+    path: intercom
+    compatibleRuntimes:
+      - nodejs8.10

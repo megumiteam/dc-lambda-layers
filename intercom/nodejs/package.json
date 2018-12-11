@@ -1,0 +1,16 @@
+{
+  "name": "intercom-layers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Hidetaka Okamoto <info@wp-kyoto.net> (https://wp-kyoto.net)",
+  "license": "ISC",
+  "dependencies": {
+    "intercom-client": "^2.10.4",
+    "moment": "^2.22.2"
+  }
+}
