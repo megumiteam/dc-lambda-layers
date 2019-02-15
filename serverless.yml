@@ -4,8 +4,10 @@ provider:
   name: aws
   runtime: nodejs8.10
   stage: development
-  region: us-east-1
-  deploymentBucket: serverless.${self:provider.region}.shifter.deploys
+  region: us-west-2
+  deploymentBucket:
+    name: serverless.${self:provider.region}.amimoto-ami.deploys
+    serverSideEncryption: AES256
 
 custom:
   prune:
