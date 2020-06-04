@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "stripe-utils": "git+https://github.com/megumiteam/stripe-utils#master",
-    "stripe": "^6.19.0"
+    "stripe": "^8.0.0"
   }
 }
